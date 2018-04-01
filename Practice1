@@ -1,0 +1,1037 @@
+https://www.codecademy.com/courses/learn-html-elements/lessons/intro-to-html/exercises/intro?action=lesson_resume&course_redirect=learn-html?show-onboarding-course=true
+Password: 8urO1%n8I8Tk
+
+<span> - in-line text
+<div> - to group chunks of text
+<em> - emphasize
+<strong>
+
+<ul> or <ol>
+	<li></li>
+
+<div id="title">
+</div>
+<span>
+
+<br>
+
+<img   src="url" alt="description" />
+
+<video src="url" width="#" height="#" controls > </video>
+
+To make sure your document is forever interpreted correctly, always include <!DOCTYPE html> at the very beginning of your HTML documents.
+HTML code is always saved in a file with an .html extension. Nest <html></html>
+
+<!DOCTYPE html> 
+<html>
+<head>
+<title>
+</head>
+<html>
+
+<a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a>
+
+<a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">The Brown Bear</a>
+
+<a href="./contact.html">Contact</a>
+A relative path to link within the same folder
+
+<a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank"><img src="#" alt="A red prickly pear fruit"/></a>
+
+<p id="top">This is the top of the page!</p> <h1 id="bottom">This is the bottom! </h1>
+
+<ol> <li><a href="#top">Top</a></li> <li><a href="#bottom">Bottom</a></li> </ol>
+
+<!-- This is a comment that the browser will not display. -->
+
+
+<a href="#contact">Click this for contact</a>
+<div id="contact"></div>
+
+<h2> <a href="#sponge"> This links to sponges</a></h2>
+<h2 id="sponges">Sponges</h2>
+
+<table>
+  <tr>
+    <th></th>
+    <th scope="col">Saturday</th>
+    <th scope="col">Sunday</th>
+  </tr>
+  <tr>
+    <th scope="row">Temperature</th>
+    <td>73</td>
+    <td>81</td>
+  </tr>
+</table>
+
+table, td {
+  border: 1px solid black;
+}
+
+
+<table>
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+  </tr>
+  <tr>
+    <td colspan="2">Out of Town</td>
+    <td>Back in Town</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr> <!-- Row 1 -->
+    <th></th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+  </tr>
+  <tr> <!-- Row 2 -->
+    <th>Morning</th>
+    <td rowspan="2">Work</td>
+    <td rowspan="3">Relax</td>
+  </tr>
+  <tr> <!-- Row 3 -->
+    <th>Afternoon</th>
+  </tr>
+  <tr> <!-- Row 4 -->
+    <th>Evening</th>
+    <td>Dinner</td>
+  </tr>
+</table>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Quarter</th>
+      <th>Revenue</th>
+      <th>Costs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Q1</th>
+      <td>$10M</td>
+      <td>$7.5M</td>
+    </tr>
+    <tr>
+      <th>Q2</th>
+      <td>$12M</td>
+      <td>$5M</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Total</th>
+      <td>$22M</td>
+      <td>$12.5M</td>
+    </tr>
+  </tfoot>
+</table>
+
+
+examples of attributes inside tag
+<div class="code">
+<p id="joke">
+<a href="fred.php">
+
+
+<hr> creates a line 
+
+p {
+    letter-spacing: 0.5em;
+    word-spacing: 2em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    background-color: #ccc;
+    margin: 20px;
+    padding: 40px;
+}
+
+margin - the space b/w the box and the side of the screen 
+padding - the space b/w the words and outside of the box
+
+margin-top, margin-right, margin-bottom, margin-left, padding-top, padding-right, padding-bottom and padding-left 
+
+The Box Model works like this: in the middle you have the content area (let’s say an image), surrounding that you have the padding, surrounding that you have the border and surrounding that you have the margin.
+
+h2 {
+    border-style: dashed;
+    border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red;
+}
+
+
+id selector - one element 
+#top {
+    background-color: #ccc;
+    padding: 20px
+}
+<div id="top">
+
+
+class selector - more than one element
+.intro {
+    color: red;
+    font-weight: bold;
+}
+<p class="intro">Mmm mm mmmmm</p>
+
+The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
+
+
+Grouping
+h2, .thisOtherClass, .yetAnotherClass {
+    color: red;
+}
+
+
+Nesting 
+#top {
+    background-color: #ccc;
+    padding: 1em
+}
+
+#top h1 {
+    color: #ff0;
+}
+
+#top p {
+    color: red;
+    font-weight: bold;
+}
+
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+    background-color: yellow;
+}
+
+input:focus, textarea:focus {
+    background: #eee;
+}
+
+
+top, right, bottom, left
+p {
+    margin: 1px 5px 10px 20px;
+
+
+
+padding
+padding: 1em 10em;
+(top and bottom)(right and left)
+
+
+p {
+    border: 1px red solid;
+}
+
+}
+
+
+
+Background
+body {
+    background: white url(http://www.htmldog.com/images/bg.gif) no-repeat top right;
+}
+
+
+static is the default value and renders a box in the normal order of things, as they appear in the HTML.
+relative is much like static but the box can be offset from its original position with the properties top, right, bottom and left.
+absolute pulls a box out of the normal flow of the HTML and delivers it to a world all of its own. In this crazy little world, the absolute box can be placed anywhere on the page using top, right, bottom and left.
+fixed behaves like absolute, but it will absolutely position a box in reference to the browser window as opposed to the web page, so fixed boxes should stay exactly where they are on the screen even when the page is scrolled.
+
+
+<link href="https://www.codecademy.com/stylesheets/style.css" type="text/css" rel="stylesheet">
+
+<link href="./style.css" type="text/css" rel="stylesheet">
+
+
+html:
+<p class="brand">Sole Shoe Company</p>
+
+CSS: 
+.brand {
+}
+
+h1.special {
+}
+
+
+<ul class='main-list'>
+  <li> ... </li>
+  <li> ... </li>
+  <li> ... </li>
+</ul>
+
+.main-list li {
+
+}
+
+h1, 
+.menu {
+  font-family: Georgia;
+}
+
+
+.overlay {
+  opacity: 0.5;
+}
+
+
+.main-banner {
+  background-image: url("https://www.example.com/image.jpg");
+}
+
+
+<div class="container">
+  <header>Welcome!</header>
+  <nav>Links!</nav>
+  <section class="info">Info!</section>
+  <section class="services">Services!</section>
+  <footer>Contact us!</footer>
+</div>
+.container {
+  display: grid;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "head head"
+                       "nav nav" 
+                       "info services"
+                       "footer footer";
+  grid-template-rows: 300px 120px 800px 120px;
+  grid-template-columns: 1fr 3fr; 
+}
+
+header {
+  grid-area: head;
+} 
+
+nav {
+  grid-area: nav;
+} 
+
+.info {
+  grid-area: info;
+} 
+
+.services {
+  grid-area: services;
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+
+In CSS, it's always url.
+In HTML:
+It's href (short for Hypertext REFerence) for all kinds of links, including tags a and link.
+When it's not a link, you are setting the source, so it's src.
+
+src -- I want to load up this resource for myself.
+
+href -- I want to refer to this resource for someone else.
+
+url -- A script wants to use this url as a variable.
+
+
+you can use href for links as follows:
+<a href="http://www.google.com/">Click here</a>
+<link href="mystylesheet.css" type="text/css">
+
+Now use to src put the links into html like this:
+<img src="mypic.jpg">
+<script src="script.js"></script>
+
+
+start — aligns the grid to the left side of the grid container
+end — aligns the grid to the right side of the grid container
+center — centers the grid horizontally in the grid container
+stretch — stretches the grid items to increase the size of the grid to expand horizontally across the container
+space-around — includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is before the first and after the last element
+space-between — includes an equal amount of space between grid items and no space at either end
+space-evenly — places an even amount of space between grid items and at either end
+
+
+
+We can use justify-content to position the entire grid along the row axis.
+align-items accepts these values:
+start — aligns grid items to the top side of the grid area
+end — aligns grid items to the bottom side of the grid area
+center — aligns grid items to the center of the grid area
+stretch — stretches all items to fill the grid area
+
+
+
+align-content positions the rows along the column axis, or from top to bottom.
+It accepts these positional values:
+start — aligns the grid to the top of the grid container
+end — aligns the grid to the bottom of the grid container
+center — centers the grid vertically in the grid container
+stretch — stretches the grid items to increase the size of the grid to expand vertically across the container
+space-around — includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is before the first and after the last element
+space-between — includes an equal amount of space between grid items and no space at either end
+space-evenly — places an even amount of space between grid items and at either end
+
+
+align-self and justify-self
+
+
+<body>
+  <div>Part 1</div>   
+  <div>Part 2</div>
+  <div>Part 3</div>
+  <div>Part 4</div>
+  <div>Part 5</div>
+</body>
+body {
+  display: grid;
+  grid: repeat(2, 100px) / repeat(2, 150px); 
+  grid-auto-rows: 50px;
+}
+
+
+grid-auto-flow accepts these values:
+
+row — specifies the new elements should fill rows from left to right and create new rows when there are too many elements (default)
+column — specifies the new elements should fill columns from top to bottom and create new columns when there are too many elements
+dense — this keyword invokes an algorithm that attempts to fill holes earlier in the grid layout if smaller elements are added
+
+
+
+grid-template-areas specifies grid named grid areas
+grid layouts are two-dimensional: they have a row, or inline, axis and a column, or block, axis.
+justify-items specifies how individual elements should spread across the row axis
+justify-content specifies how groups of elements should spread across the row axis
+justify-self specifies how a single element should position itself with respect to the row axis
+align-items specifies how individual elements should spread across the column axis
+align-content specifies how groups of elements should spread across the column axis
+align-self specifies how a single element should position itself with respect to the column axis
+grid-auto-rows specifies the height of rows added implicitly to the grid
+grid-auto-columns specifies the width of columns added implicitly to the grid
+grid-auto-flow specifies in which direction implicit elements should be created
+
+
+
+inline a 
+block p, h
+inline-block img, buttone
+
+
+navigating to different pages on a site 
+<nav> 
+<a href="letter"></a>
+</nav>
+
+
+atribute - added to an html start tag, like class=
+value - specifies the value of an element, like id="fancy", fancy is the value 
+class - class selector (.class) class id (#class)
+tag - <p>
+element - tags plus content 
+content - within the tags
+selector is (attribute="value")
+
+<span></span> is like <div></div> except is inline 
+
+
+Flexbox
+CSS properties: 
+justify-content
+align-items
+flex-direction
+order
+align-self
+flex-wrap
+flex-flow
+align-content
+
+display: flex;
+
+justify-content
+flex-start: Items align to the left side of the container.
+flex-end: Items align to the right side of the container.
+center: Items align at the center of the container.
+space-between: Items display with equal spacing between them.
+space-around: Items display with equal spacing around them.
+
+align-items
+flex-start: Items align to the top of the container.
+flex-end: Items align to the bottom of the container.
+center: Items align at the vertical center of the container.
+baseline: Items display at the baseline of the container.
+stretch: Items are stretched to fit the container.
+
+flex-direction
+row: Items are placed the same as the text direction.
+row-reverse: Items are placed opposite to the text direction.
+column: Items are placed top to bottom.
+column-reverse: Items are placed bottom to top.
+
+Notice that when you set the direction to a reversed row or column, start and end are also reversed.
+
+order property 
+
+align-self: overrides align-items: 
+
+flex-wrap
+nowrap: Every item is fit to a single line.
+wrap: Items wrap around to additional lines.
+wrap-reverse: Items wrap around to additional lines in reverse.
+
+flex-flow: column wrap; 
+(flex-direction and flex-wrap)
+
+align-content
+flex-start: Lines are packed at the top of the container.
+flex-end: Lines are packed at the bottom of the container.
+center: Lines are packed at the vertical center of the container.
+space-between: Lines display with equal spacing between them.
+space-around: Lines display with equal spacing around them.
+stretch: Lines are stretched to fit the container.
+
+grid-column-start: 3;
+grid-column-end
+
+
+Linked CSS
+<link href="css_file.css" rel="stylesheet" type="text/css" media="all">
+
+media
+all - for all devices.
+screen - for computer screens.
+print - for when the document is printed.
+speech - for when the document is spoken (eg. when using a screenreader).
+
+rel= relationship
+
+import - import a css page into another css page, then link to html page
+@import url("more_styles.css") media-types;
+
+embedded CSS
+<style></style> within <head></head>
+
+in-line
+
+in-line will override
+embedded will override
+linked will override
+imported
+
+
+
+@import url("another_stylesheet.css") media-types;
+Import a style sheet (placed at top of external style sheet).
+
+<link href="css_file.css" rel="stylesheet" type="text/css" media="all">
+Link to an external style sheet (placed in head of document).
+
+<style> style rules <style>
+Embedded styles (placed in head of document).
+
+<tagname style="style rules" >
+In-line styles.
+
+
+selectors
+universal selector
+* {
+   color: green;
+   font-size: 20px;
+   line-height: 25px;
+}
+
+element type selector/type selector
+<ul>
+
+ID selector #
+
+class selector .
+<div class=”box box-more box-extended”></div>
+
+Descendant Combinator
+#container .box {
+   float: left;
+   padding-bottom: 15px;
+}
+
+Child Combinator
+#container > .box {
+   float: left;
+   padding-bottom: 15px;
+}
+
+In this example, the selector will match all elements that have a class of box and that are immediate children of the #container element.
+
+
+General Sibling Combinator
+h2 ~ p {
+   margin-bottom: 20px;
+}
+
+Adjacent Sibling Combinator
+p + p {
+   text-indent: 1.5em;
+   margin-bottom: 0;
+}
+
+Attribute Selector
+input[type="text"] {
+   background-color: #444;
+   width: 200px;
+}
+
+Pseudo-class
+a:hover {
+   color: red;
+}
+
+Pseudo-element
+.container:before {
+   content: "";
+   display: block;
+   width: 50px;
+   height: 50px;
+   background-color: #141414;
+}
+
+.selector {
+	property: value; 
+
+}
+
+selectors
+tag - such as a (anchor)
+class - .
+ID - #
+
+
+
+The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+
+
+p:nth-child (even){
+	color: red; 
+}
+
+
+.favorite {
+  color: red !important;
+  font-weight: bold !important;
+}
+
+
+style attribute (in-line) - ID - class, psdueo-class, attribute (attribute="value") - elements (like p)
+
+
+
+positioning
+
+directional properties
+top: auto; 
+left: auto; 
+right: auto; 
+bottom: auto; 
+
+position: static; 
+
+position: relative; 
+can use directional properties with relative, then it starts moving. a gap will be created where it left. things can be positioned on top of other things. 
+top: 50px; 
+left: 20px; 
+
+
+position: absolute; 
+the other elements flow as if it is not there. it will be on top of other elements. if you give it a position it will be positioned relative to the nearest element with a declared position. if one does not exist, it will be positioned relative to the dom. 
+
+
+position: fixed; 
+things around it colapse as if it doesn't exist. always fixed relative to the document windown, not other elements, the dom or anything else. 
+
+
+float
+#sidebar {
+  float: right;			
+}
+left, right, none inherit (assumes float value from parent element)
+the surrounding text can respond and move around the floating item. like text-wrap. 
+
+clear
+#footer {
+  clear: both;			
+}
+both, left, right, none
+
+
+empty div
+<div style="clear: both;"></div>
+
+The Overflow Method
+If this property is set to auto or hidden on the parent element, the parent will expand to contain the floats, effectively clearing it for succeeding elements. 
+
+The Easy Clearing Method
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+
+
+<nav class="container">
+  <div>Home</div>
+  <div>Search</div>
+  <div>Logout</div>
+</nav>
+
+.container {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.logout {
+    margin-left: auto;
+}
+
+.container > div {
+    flex: 1;
+}
+
+
+
+@media screen and (min-width:600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  section {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+  }
+}
+
+@media (hover: hover) { ... }
+
+@media (max-width: 12450px) { ... }
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+JAVASCRIPT
+<script type="text/javascript" src="message.js"></script>  
+
+<script>  
+// It is single line comment  
+document.write("hello javascript");  
+</script> 
+
+<script>  
+/* It is multi line comment.  
+It will not be displayed */  
+document.write("example of javascript multiline comment");  
+</script>  
+
+if (10 > 5) {
+    var outcome = "if block";
+}
+
+outcome;
+
+OUTPUT 	
+"if block"
+
+if ("cat" === "dog") {
+    var outcome = "if block";
+} else {
+    var outcome = "else block";
+}
+
+
+var name = "Bill"
+var val = 3
+
+if(val>=3){
+	console.log(name+"is cool")
+} else{
+	console.log("Scott is cool.");
+}
+
+
+var name = "Bill"
+var val = 2
+
+if(val>0){
+	console.log(name+"is cool")
+} else if (val<0){
+	console.log("Scott is cool.");
+}
+
+
+
+var name = "Bill"
+var val = 0
+
+if(val>0){
+	console.log(name+"is cool")
+} else if (val<0){
+	console.log("Scott is cool.");
+
+
+prompt is a function in js
+var greeting = "what is your name?";
+var name = prompt(greeting);
+alert(name);
+
+
+
+Loops
+
+console.log(0);
+console.log(1);
+ocnsole.log(3);
+
+// initializer - where will the loop start? 
+// condition for when your loop should end - end point
+// Incrementer or decrementor- will loop go up or down? 
+
+for (var i=0; i<=15; i++) {
+	console.log(i);
+}
+
+i=i+1
+
+
+for (var bunny=5; bunny<=10; bunny+=2) {
+	console.log(bunny);
+}
+
+
+for (var bunny=5; bunny<=10; bunny+=2) {
+	console.log("clap!");
+}
+
+
+
+
+var total = 0; 
+for(var num = 0; num<10; num++){
+	total += num; //total = total + num
+}
+
+console.log("the total is: " + total);
+
+
+
+var fruits = ["mango", "banana", "apple"];
+for (var i=0; i<3; i++){
+	console.log(i);
+}
+
+you get 0, 1, 2 - these are the indexes of the array 
+
+console.log(fruite[0]);
+mango
+
+console.log(fruits[1]);
+banana
+
+
+for (var i=0; i<3; i++){
+	console.log(fruits[i]);
+
+
+or (var i=0; i<fruits.length; i++){
+	console.log(fruits[i]);
+
+fruits.length = 3
+
+
+
+loop through an object, objects dont have indexes or order
+
+var data ={
+	name: "john",
+	age: 28, 
+	maritalStatus: true
+}
+
+for (var elem in data) {
+	
+}
+ for (var elem in data){
+ console.log(elem, data[elem]);
+ }
+
+the brackets give values as well 
+data.age
+
+console.log(data["maritalstatus"])
+
+
+//for loop that goes from top to bottom
+
+
+for (var num = 1; num <100; num++) {
+	total = total +num; 
+}
+console.log("The total is: " + total)
+
+var total = 
+
+for (var num = 10; num >=0; num--){
+	console.log(num);
+}
+
+
+var total = 0; 
+for (var num = 100; num>=0; num--){
+	total +=num; 
+}
+console.log(total)
+
+
+
+
+While Loops
+
+var num = 0; //initializer 
+while (num < 10) {
+	console.log(num);
+	num++; 
+}
+
+output will be 1-10
+
+
+
+var sum = 0; //store all the adition of numbers// final value
+var num = 0; 
+
+while (num < 10) {
+	sum += num; 
+	num++; 
+}
+console
+
+var randomstuff = ["apple", 3.2414, 999, true, false, undefined, ["apple", "ball", "cat"],] 3, 2, "lastobject"]
+
+console.log(randomstuff)
+
+var x = 0; 
+
+while(x < randomstuff.length) {
+	console.log(x); //1-9
+	console.log(randomstuff[x]);
+	x++; //the words 
+}
+
+//backwards loop
+
+var otherstuff = ["apple", 3.2414, 999, true, false, undefined, ["apple", "ball", "cat"],] 3, 2, "lastobject"]
+
+var num = otherstuff.length-1; //10
+
+while(num >= 0) {
+	console.log(num); //10-0
+	console.log (othertuff[num]);
+	num--; 
+}
+
+
+var cars = ["lambo", "bmw", "tesla"];
+
+var num = 0; 
+
+while (num < cars.length){
+	console.log(cars[num]);
+	num++; 
+}
+
+when you know the number of loops - use for loop
+
+when you don't know when to stop - use while loop (list of numbers) 
+
+
+while(test){
+	code
+}
+
+do while loop
+the code is run first, then tests the condition. always runs at least once 
+
+
+var x = 5; 
+do {
+	document.write(x + "hello <br />"); 
+	x++; 
+} while (x<=20);
+
+
+5 hello
+6 hello
+...
+20 hello
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
