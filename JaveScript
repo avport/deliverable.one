@@ -821,21 +821,72 @@ while (currentCardIndex = 0; currentCardIndex < currentCard.length; currentCard+
 
 
 
+Functions
+
+
+var functionName = function() {
+
+};
+functionName(); 
 
 
 
 
 
+var functionName = function(x, y) {
+  
+};
+functionName(200,300); 
+
+
+
+var calcTotalDonuts = function(numYears) {
+  return 1* 52* numYears; 
+};
+
+calcTotalDonuts(14);
 
 
 
 
 
+var lifeInches = 20; 
+
+var calcInches = function(startAge, endAge, inchesPerYear) {
+  
+  var totalInches = inchesPerYear * (endAge-startAge);
+  lifeInches += totalInches; 
+  return totalInches; 
+}
+
+text("from 0-8 years:"); 
+text(calcInches(0,8,2.5));
+
+text("from 8-16 years:");
+text(calcInches(8,16,2));
+
+text("total grown over life:"); 
+text(lifeInches);
 
 
 
+var varName = x; 
+
+if (condition) {
+  code to run; 
+}
 
 
+not equal to !==
+
+
+if (X && Y) {
+  
+}
+
+if (X || Y) {
+  
+}
 
 
 

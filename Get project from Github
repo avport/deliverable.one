@@ -1,0 +1,25 @@
+find the folder in finder
+How to navigate terminal
+cd .. = go up in folders
+cd < directory i am moving to> moves me to that directory 
+cd <tab tab> = shows me folders in my direcory 
+pwd = shows me directory i am in 
+ls enter to see all folders
+
+
+Get project from Github
+git clone <to go github and copy the address from 'clone or download'> copy foler next to git clone, then press enter
+
+
+
+Save to Github
+git add .
+git commit -m "message here"
+git push
+
+
+**You will need this later**
+Get changes from Github
+git pull
+
+
